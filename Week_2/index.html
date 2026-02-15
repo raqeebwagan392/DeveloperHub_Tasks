@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SmartCart - Your Smart Shopping Destination</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- ========================================
+         HEADER SECTION (From Week 1)
+         ======================================== -->
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <!-- Logo -->
+                <div class="logo">
+                    <img src="https://cdn-icons-png.flaticon.com/512/3144/3144456.png" alt="SmartCart Logo" class="logo-img">
+                    <h1>SmartCart</h1>
+                </div>
+
+                <!-- Search Bar -->
+                <div class="search-container">
+                    <input 
+                        type="text" 
+                        class="search-input" 
+                        id="searchInput" 
+                        placeholder="Search for products..."
+                    >
+                    <button class="search-btn" id="searchBtn">
+                        <span>🔍</span>
+                    </button>
+                </div>
+
+                <!-- Navigation Menu -->
+                <nav class="nav-menu">
+                    <a href="#home" class="nav-link active">Home</a>
+                    <a href="#shop" class="nav-link">Shop</a>
+                    <a href="#about" class="nav-link">About</a>
+                    <a href="#contact" class="nav-link">Contact</a>
+                </nav>
+
+                <!-- Cart Icon -->
+                <div class="cart-icon" id="cartIcon">
+                    <span class="cart-emoji">🛒</span>
+                    <span class="cart-count" id="cartCount">0</span>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- ========================================
+         WEEK 2: HERO SECTION (Home Page)
+         ======================================== -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h2 class="hero-title">Welcome to SmartCart</h2>
+                <p class="hero-subtitle">Discover amazing products at unbeatable prices</p>
+                <button class="cta-btn" id="ctaBtn">Start Shopping</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========================================
+         WEEK 2: FEATURED CATEGORIES SECTION
+         ======================================== -->
+    <section class="categories-section">
+        <div class="container">
+            <h2 class="section-title">Shop by Category</h2>
+            <div class="categories-grid">
+                <!-- Electronics Category -->
+                <div class="category-card" data-category="electronics">
+                    <div class="category-icon">💻</div>
+                    <h3 class="category-name">Electronics</h3>
+                    <p class="category-description">Latest gadgets and tech</p>
+                </div>
+
+                <!-- Fashion Category -->
+                <div class="category-card" data-category="fashion">
+                    <div class="category-icon">👕</div>
+                    <h3 class="category-name">Fashion</h3>
+                    <p class="category-description">Trendy clothing & accessories</p>
+                </div>
+
+                <!-- Home & Living Category -->
+                <div class="category-card" data-category="home">
+                    <div class="category-icon">🏠</div>
+                    <h3 class="category-name">Home & Living</h3>
+                    <p class="category-description">Quality home essentials</p>
+                </div>
+
+                <!-- Sports Category -->
+                <div class="category-card" data-category="sports">
+                    <div class="category-icon">⚽</div>
+                    <h3 class="category-name">Sports</h3>
+                    <p class="category-description">Fitness & outdoor gear</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========================================
+         WEEK 2: PRODUCT LISTING SECTION
+         ======================================== -->
+    <section class="products-section">
+        <div class="container">
+            <h2 class="section-title">Featured Products</h2>
+            
+            <!-- Product Grid -->
+            <div class="product-grid" id="productGrid">
+                <!-- Products will be dynamically inserted by JavaScript -->
+            </div>
+
+            <!-- Pagination / Load More -->
+            <div class="pagination-container">
+                <button class="load-more-btn" id="loadMoreBtn">Load More Products</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========================================
+         WEEK 2: PROMOTIONAL BANNER
+         ======================================== -->
+    <section class="promo-section">
+        <div class="container">
+            <div class="promo-content">
+                <h2 class="promo-title">Special Offer!</h2>
+                <p class="promo-text">Get 20% off on your first order. Use code: SMART20</p>
+                <button class="promo-btn">Shop Now</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========================================
+         FOOTER SECTION (From Week 1)
+         ======================================== -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <!-- About Column -->
+                <div class="footer-column">
+                    <h3>About SmartCart</h3>
+                    <p>Your trusted online shopping destination for quality products at competitive prices. We believe in providing exceptional customer service and a seamless shopping experience.</p>
+                </div>
+
+                <!-- Quick Links Column -->
+                <div class="footer-column">
+                    <h3>Quick Links</h3>
+                    <ul class="footer-links">
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#shop">Shop</a></li>
+                        <li><a href="#about">About Us</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+
+                <!-- Customer Service Column -->
+                <div class="footer-column">
+                    <h3>Customer Service</h3>
+                    <ul class="footer-links">
+                        <li><a href="#faq">FAQ</a></li>
+                        <li><a href="#shipping">Shipping Information</a></li>
+                        <li><a href="#returns">Returns & Exchanges</a></li>
+                        <li><a href="#privacy">Privacy Policy</a></li>
+                        <li><a href="#terms">Terms of Service</a></li>
+                    </ul>
+                </div>
+
+                <!-- Contact Column -->
+                <div class="footer-column">
+                    <h3>Contact Us</h3>
+                    <p><strong>Email:</strong> support@smartcart.com</p>
+                    <p><strong>Phone:</strong> (555) 123-4567</p>
+                    <p><strong>Address:</strong> 123 Shopping Street<br>Commerce City, CC 12345</p>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2026 SmartCart. All rights reserved. </p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript File -->
+    <script src="script.js"></script>
+</body>
+</html>
