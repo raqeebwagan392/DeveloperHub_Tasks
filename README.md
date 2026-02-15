@@ -8,7 +8,7 @@
 
 This is a complete 3-week frontend development project for building a modern eCommerce website from scratch.
 
----
+----
 
 ## 📅 Weekly Breakdown
 
